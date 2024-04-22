@@ -1,16 +1,17 @@
 'use client';
 import { ThemeProvider } from 'styled-components';
 
+import Introduction from '@/components/Introdution';
 import theme from '@/global/theme';
 
-import { Text } from './styles';
+import { Container } from './styles';
 
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
-      <main>
-        <Text>Hello World</Text>
-      </main>
+      <Container>
+        <Introduction />
+      </Container>
     </ThemeProvider>
   );
 }

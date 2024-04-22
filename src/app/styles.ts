@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const Text = styled.div`
-  color: ${({ theme }) => theme.colors.grays.c5};
+export const Container = styled.main`
+  background-color: ${({ theme }) => theme.colors.grays['c10']};
 `;
