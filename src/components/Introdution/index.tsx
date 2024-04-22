@@ -17,12 +17,12 @@ import {
 
 export default function Introduction() {
   const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress);
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '70%']);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.3, 0]);
 
   return (
     <Container>
-      <ImgBackground style={{ y }} />
+      <ImgBackground style={{ y, opacity }} />
       <Content>
         <Person>
           <ImagePerson

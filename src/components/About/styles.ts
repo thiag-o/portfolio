@@ -1,11 +1,19 @@
 import { Quotes } from 'phosphor-react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   position: relative;
   min-height: 100vh;
   z-index: 1;
-  background-color: ${({ theme }) => theme.colors.grays['c10']};
+
+  ${({ theme }) => css`
+    background: linear-gradient(
+      180deg,
+      ${theme.colors.grays['c10']} 71%,
+      ${theme.colors.grays['c10']}F2 100%
+    );
+  `}
+
   padding-top: 80px;
 `;
 
@@ -32,7 +40,7 @@ export const Content = styled.div`
   }
 `;
 
-export const QuoteSection = styled.div`
+export const QuoteSection = styled.blockquote`
   position: absolute;
   bottom: 32px;
   right: 10px;

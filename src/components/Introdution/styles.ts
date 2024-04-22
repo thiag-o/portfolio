@@ -16,7 +16,8 @@ export const ImgBackground = styled(motion.div)`
   height: 100vh;
   width: 100%;
 
-  background: url('/introducao.jpg');
+  background: url('/introdution.jpg');
+  opacity: 0.3;
   background-size: cover;
   background-position: center;
 `;
@@ -31,7 +32,6 @@ export const Content = styled.div`
   position: relative;
   z-index: 1;
 
-  background-color: ${({ theme }) => theme.colors.grays['c10']}B8;
   height: 100vh;
 `;
 
