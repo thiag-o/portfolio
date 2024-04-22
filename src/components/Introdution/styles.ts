@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { CaretDoubleDown } from 'phosphor-react';
 import styled from 'styled-components';
@@ -7,13 +8,13 @@ export const Container = styled.section`
   min-height: 100vh;
 `;
 
-export const ImgBackground = styled.div`
-  position: fixed;
+export const ImgBackground = styled(motion.div)`
+  position: absolute;
 
   offset: 0;
 
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 
   background: url('/introducao.jpg');
   background-size: cover;

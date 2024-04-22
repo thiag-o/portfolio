@@ -14,3 +14,17 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1566px;
+}
+
+@media (max-width: 1566px) {
+  .container {
+    max-width: 1200px;
+  }
+}

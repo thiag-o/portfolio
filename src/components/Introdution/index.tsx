@@ -1,3 +1,4 @@
+import { useScroll, useTransform } from 'framer-motion';
 import React from 'react';
 
 import {
@@ -15,9 +16,13 @@ import {
 } from './styles';
 
 export default function Introduction() {
+  const { scrollYProgress } = useScroll();
+  console.log(scrollYProgress);
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
+
   return (
     <Container>
-      <ImgBackground />
+      <ImgBackground style={{ y }} />
       <Content>
         <Person>
           <ImagePerson
@@ -39,6 +44,7 @@ export default function Introduction() {
             Atualmente trabalhando no ramo de tecnologia como desenvolvedor
             front-end.
           </AdditionalSubtitle>
+
           <Icon />
         </AdditionalInfo>
       </Content>

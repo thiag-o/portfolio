@@ -1,6 +1,7 @@
 'use client';
 import { ThemeProvider } from 'styled-components';
 
+import About from '@/components/About';
 import Introduction from '@/components/Introdution';
 import theme from '@/global/theme';
 
@@ -11,6 +12,7 @@ export default function Home() {
     <ThemeProvider theme={theme}>
       <Container>
         <Introduction />
+        <About />
       </Container>
     </ThemeProvider>
   );
