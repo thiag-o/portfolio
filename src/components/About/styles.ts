@@ -43,7 +43,7 @@ export const Content = styled.div`
 export const QuoteSection = styled.blockquote`
   position: absolute;
   bottom: 32px;
-  right: 10px;
+  right: 15px;
 
   display: flex;
   width: fit-content;

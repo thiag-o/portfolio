@@ -3,7 +3,6 @@ import React from 'react';
 import { technologies } from '@/utils/tecnologies';
 import { tools } from '@/utils/tools';
 
-import TechnologyCard from '../TechnologyCard';
 import {
   Container,
   Content,
@@ -12,6 +11,7 @@ import {
   TecnologiesSection,
   ToolsSection,
 } from './styles';
+import TechnologyCard from './TechnologyCard';
 
 export default function Technologies() {
   return (

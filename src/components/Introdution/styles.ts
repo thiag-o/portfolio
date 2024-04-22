@@ -23,7 +23,7 @@ export const ImgBackground = styled(motion.div)`
 `;
 
 export const Content = styled.div`
-  padding: 10px;
+  padding: 15px;
   display: grid;
   position: relative;
 
