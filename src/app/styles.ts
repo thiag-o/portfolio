@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const Container = styled.main`
@@ -6,14 +7,10 @@ export const Container = styled.main`
 
 export const SectionBgShare = styled.div`
   position: relative;
-`;
-
-export const Background = styled.div`
-  position: absolute;
   background: url('/about_tech.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  height: 100%;
   width: 100%;
 `;

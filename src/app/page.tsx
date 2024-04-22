@@ -1,4 +1,5 @@
 'use client';
+import { useScroll, useTransform } from 'framer-motion';
 import { ThemeProvider } from 'styled-components';
 
 import About from '@/components/About';
@@ -6,7 +7,7 @@ import Introduction from '@/components/Introdution';
 import Technologies from '@/components/Technologies';
 import theme from '@/global/theme';
 
-import { Background, Container, SectionBgShare } from './styles';
+import { Container, SectionBgShare } from './styles';
 
 export default function Home() {
   return (
@@ -15,7 +16,6 @@ export default function Home() {
         <Introduction />
 
         <SectionBgShare>
-          <Background />
           <About />
           <Technologies />
         </SectionBgShare>
