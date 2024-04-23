@@ -22,14 +22,14 @@ export default function Projects() {
           infinite: true,
         },
       },
-      {
-        breakpoint: 576,
-        settings: {
-          // slidesToShow: 2,
-          // rows: 2,
-          // infinite: true,
-        },
-      },
+      // {
+      //   breakpoint: 576,
+      //   settings: {
+      //     // slidesToShow: 2,
+      //     // rows: 2,
+      //     // infinite: true,
+      //   },
+      // },
     ],
   };
   return (
