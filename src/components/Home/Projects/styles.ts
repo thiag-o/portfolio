@@ -13,12 +13,6 @@ export const Content = styled.div`
   min-height: inherit;
 
   color: ${({ theme }) => theme.colors.grays['c2']};
-  h2 {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: ${({ theme }) => theme.fontWeight.semiBold};
-    margin-bottom: 32px;
-  }
 
   p {
     margin-bottom: 16px;

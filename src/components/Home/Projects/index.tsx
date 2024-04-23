@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider, { Settings } from 'react-slick';
 
+import HeaderSection from '@/components/Shared/HeaderSection';
+
 import Project from './Project';
 import { Container, Content, ProjectList } from './styles';
 
@@ -35,7 +37,7 @@ export default function Projects() {
   return (
     <Container>
       <Content className="container">
-        <h2>Projetos</h2>
+        <HeaderSection name="Projetos" centered />
         <Slider {...settings}>
           {[1, 2, 3, 4, 5, 6].map((item) => (
             <Project key={item} />

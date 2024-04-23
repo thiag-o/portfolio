@@ -21,11 +21,6 @@ export const Content = styled.div`
   position: relative;
   min-height: inherit;
   color: ${({ theme }) => theme.colors.grays['c2']};
-  h2 {
-    font-size: 2.4rem;
-    font-weight: ${({ theme }) => theme.fontWeight.semiBold};
-    margin-bottom: 32px;
-  }
 
   p {
     margin-bottom: 16px;

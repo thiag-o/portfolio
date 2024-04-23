@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SectionTitle from '@/components/Shared/HeaderSection';
+
 import {
   Container,
   Content,
@@ -14,7 +16,7 @@ export default function About() {
   return (
     <Container>
       <Content className="container">
-        <h2>Sobre</h2>
+        <SectionTitle name="Sobre" />
         <p>
           Sou um apaixonado por criar experiências web excepcionais como
           desenvolvedor front-end. Com uma mente curiosa e uma paixão pela

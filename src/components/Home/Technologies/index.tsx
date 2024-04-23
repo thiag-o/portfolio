@@ -1,5 +1,6 @@
 import React from 'react';
 
+import HeaderSection from '@/components/Shared/HeaderSection';
 import { technologies } from '@/utils/tecnologies';
 import { tools } from '@/utils/tools';
 
@@ -17,11 +18,10 @@ export default function Technologies() {
   return (
     <Container>
       <Content className="container">
-        <h2>Tecnologias</h2>
-        <h5>
-          Recursos e ferramentas tecnológicas que utilizo para desenvolvimento.
-        </h5>
-
+        <HeaderSection
+          name="Tecnologias"
+          subtitle="Recursos e ferramentas tecnológicas que utilizo para desenvolvimento."
+        />
         <TecnologiesSection>
           <SectionTitle>TECNOLOGIAS</SectionTitle>
           <ListCards>

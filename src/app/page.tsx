@@ -3,6 +3,7 @@
 import { ThemeProvider } from 'styled-components';
 
 import About from '@/components/Home/About';
+import Contact from '@/components/Home/Contact';
 import Introduction from '@/components/Home/Introdution';
 import Projects from '@/components/Home/Projects';
 import Technologies from '@/components/Home/Technologies';
@@ -21,6 +22,7 @@ export default function Home() {
           <Technologies />
         </SectionBgShare>
         <Projects />
+        <Contact />
       </Container>
     </ThemeProvider>
   );
