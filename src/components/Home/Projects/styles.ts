@@ -35,6 +35,10 @@ export const Content = styled.div`
     margin: 0 -7px;
     & .slick-slide > div {
       padding: 10px;
+
+      @media (max-width: 768px) {
+        padding: 4px;
+      }
     }
   }
 `;
