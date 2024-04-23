@@ -1,14 +1,29 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
+  display: grid;
   height: 120px;
   width: 120px;
-  border-radius: 8px;
+
+  user-select: none;
+  cursor: pointer;
+
   padding: 5px;
-  display: grid;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 2px;
+
+  /* transition-duration: 1ms; */
+
   gap: 8px;
   align-items: center;
   justify-content: center;
+
+  border-radius: 8px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
   background-color: ${({ theme }) => theme.colors.grays['c9']};
 
   @media (min-width: 1566px) {

@@ -16,7 +16,12 @@ export default function TechnologyCard({
   cardType,
 }: ITechnologyCardProps) {
   return (
-    <Container>
+    <Container
+      whileHover={{
+        marginTop: '-8px',
+        marginBottom: '8px',
+      }}
+    >
       <ImageContainer>
         <Image
           src={`${cardType === 'tech' ? '/technologies' : '/tools'}/${image}`}
