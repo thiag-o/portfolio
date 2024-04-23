@@ -2,15 +2,27 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   position: relative;
-  margin-top: 80px;
+  padding-top: 80px;
+
+  ${({ theme }) => css`
+    background: linear-gradient(
+        ${theme.colors.grays['c10']}E3,
+        ${theme.colors.grays['c10']}E3
+      ),
+      url('/contact.jpg');
+  `}
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 `;
 
-export const BgContent = styled.div`
+export const Content = styled.div`
   position: relative;
   min-height: 100vh;
   z-index: 1;
 
-  background-color: ${({ theme }) => theme.colors.grays['c10']}E3;
+  color: ${({ theme }) => theme.colors.grays['c2']};
 `;
 
 export const ImgBackground = styled.div`
@@ -19,15 +31,8 @@ export const ImgBackground = styled.div`
   right: 0;
   z-index: 0;
   height: 100%;
-  width: 40vw;
+  width: 100vw;
 
   background: url('/contact.jpg');
   background-size: cover;
-`;
-
-export const Content = styled.div`
-  position: relative;
-  /* z-index: 1; */
-  min-height: inherit;
-  color: ${({ theme }) => theme.colors.grays['c2']};
 `;
