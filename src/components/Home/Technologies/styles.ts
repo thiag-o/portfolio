@@ -6,6 +6,7 @@ export const Container = styled.section`
   z-index: 1;
   background-color: ${({ theme }) => theme.colors.grays['c10']}F2;
   padding-top: 80px;
+  padding-bottom: 40px;
 `;
 
 export const Content = styled.div`

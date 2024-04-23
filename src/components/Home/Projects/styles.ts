@@ -7,15 +7,14 @@ export const Container = styled.section`
   padding-top: 80px;
 `;
 export const Content = styled.div`
+  max-width: 1200px;
+  padding: 0 32px;
   position: relative;
   min-height: inherit;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   color: ${({ theme }) => theme.colors.grays['c2']};
   h2 {
+    text-align: center;
     font-size: 2.4rem;
     font-weight: ${({ theme }) => theme.fontWeight.semiBold};
     margin-bottom: 32px;
@@ -32,4 +31,18 @@ export const Content = styled.div`
       font-size: 0.875rem;
     }
   }
+  .slick-list {
+    margin: 0 -7px;
+    & .slick-slide > div {
+      padding: 10px;
+    }
+  }
+`;
+
+export const ProjectList = styled.div`
+  margin: 0 auto;
+  max-width: fit-content;
+  display: grid !important;
+  gap: 12px !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
 `;

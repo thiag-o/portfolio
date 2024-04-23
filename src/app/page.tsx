@@ -1,11 +1,11 @@
 'use client';
-import { useScroll, useTransform } from 'framer-motion';
+
 import { ThemeProvider } from 'styled-components';
 
-import About from '@/components/About';
-import Introduction from '@/components/Introdution';
-import Projects from '@/components/Projects';
-import Technologies from '@/components/Technologies';
+import About from '@/components/Home/About';
+import Introduction from '@/components/Home/Introdution';
+import Projects from '@/components/Home/Projects';
+import Technologies from '@/components/Home/Technologies';
 import theme from '@/global/theme';
 
 import { Container, SectionBgShare } from './styles';
