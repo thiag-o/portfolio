@@ -19,6 +19,8 @@ const theme = {
     },
   },
 
+  fontFamily: 'var(--font-default)',
+
   fontWeight: {
     regular: 400,
     semiBold: 600,

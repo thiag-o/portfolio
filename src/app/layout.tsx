@@ -7,7 +7,7 @@ import { Raleway } from 'next/font/google';
 
 import StyledComponentsRegistry from './registry';
 
-const raleway = Raleway({ subsets: ['latin'] });
+const raleway = Raleway({ subsets: ['latin'], variable: '--font-default' });
 
 export const metadata: Metadata = {
   title: 'Thiag-o',
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt_br">
-      <body className={raleway.className}>
+      <body className={`${raleway.className} ${raleway.variable}`}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>

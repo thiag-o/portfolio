@@ -36,3 +36,40 @@ export const ImgBackground = styled.div`
   background: url('/contact.jpg');
   background-size: cover;
 `;
+
+export const FormContainer = styled.div`
+  display: block;
+  max-width: 800px;
+`;
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+`;
+
+export const SendButton = styled.button`
+  color: ${({ theme }) => theme.colors.grays['w']};
+
+  padding: 20px;
+
+  border: none;
+  border-radius: 4px;
+
+  outline: none;
+  background-color: ${({ theme }) => theme.colors.primary};
+
+  font-size: 1.25rem;
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  line-height: 1;
+  letter-spacing: 0.02rem;
+  /* filter: brightness(0.89); */
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0px 0px 8px 4px ${({ theme }) => theme.colors.primary}80;
+  }
+`;
