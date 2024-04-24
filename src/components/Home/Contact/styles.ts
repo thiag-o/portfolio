@@ -76,7 +76,11 @@ export const SendButton = styled.button`
 `;
 
 export const ContactCards = styled.div`
-  gap: 20px;
-  margin-top: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+  @media (max-width: 576px) {
+    gap: 8px;
+  }
 `;

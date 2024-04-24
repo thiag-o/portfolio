@@ -5,7 +5,10 @@ export const Container = styled(Link).attrs({
   target: '_blank',
 })`
   width: 100%;
-  padding: 20px;
+  padding: 18px;
+  border: 2px solid transparent;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
   display: flex;
   align-items: center;
@@ -19,10 +22,30 @@ export const Container = styled(Link).attrs({
   background-color: ${({ theme }) => theme.colors.grays['c9']};
 
   cursor: pointer;
+
+  transition: 0.2s ease-in;
+
+  &:hover {
+    border-color: ${({ theme }) => theme.colors.grays['c7']};
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px;
+
+    flex-direction: column;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
 `;
 
 export const Text = styled.span`
   font-size: 1.25rem;
   font-weight: ${({ theme }) => theme.fontWeight.medium};
   line-height: 1;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;

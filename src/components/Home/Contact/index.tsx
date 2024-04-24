@@ -29,9 +29,11 @@ export default function Contact() {
             <FormField title="Assunto" name="assunto" isTextArea />
             <SendButton>ENVIAR</SendButton>
           </Form>
+
           <ContactCards>
-            <ContactCard name="Linkedin" image="linkedin" href="/" />
-            <ContactCard name="GitHub" image="github" href="/" />
+            <ContactCard name="Linkedin" image="linkedin" href="#" />
+            <ContactCard name="GitHub" image="github" href="#" />
+            <ContactCard name="Email" image="email" href="#" />
           </ContactCards>
         </ContactContainer>
       </Content>
