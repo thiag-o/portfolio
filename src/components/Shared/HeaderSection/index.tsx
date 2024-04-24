@@ -12,10 +12,10 @@ interface ISectionTitleProps {
 export default function HeaderSection({
   name,
   subtitle,
-  ...rest
+  centered,
 }: ISectionTitleProps) {
   return (
-    <Container {...rest}>
+    <Container centered={centered ? 1 : 0}>
       <Title>{name}</Title>
       {subtitle && <Subtitle>{subtitle}</Subtitle>}
     </Container>

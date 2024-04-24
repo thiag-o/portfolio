@@ -37,9 +37,10 @@ export const ImgBackground = styled.div`
   background-size: cover;
 `;
 
-export const FormContainer = styled.div`
+export const ContactContainer = styled.div`
   display: block;
   max-width: 800px;
+  margin-bottom: 20px;
 `;
 export const Form = styled.form`
   display: flex;
@@ -72,4 +73,10 @@ export const SendButton = styled.button`
   &:focus-visible {
     box-shadow: 0px 0px 8px 4px ${({ theme }) => theme.colors.primary}80;
   }
+`;
+
+export const ContactCards = styled.div`
+  gap: 20px;
+  margin-top: 20px;
+  display: flex;
 `;

@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 
 interface IContainerProps {
-  centered?: boolean;
+  centered?: number;
 }
 
 export const Container = styled.div<IContainerProps>`
   margin-bottom: 32px;
   ${({ centered }) =>
-    centered &&
+    centered === 1 &&
     css`
       text-align: center;
     `}
