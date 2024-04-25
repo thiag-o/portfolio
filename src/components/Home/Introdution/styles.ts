@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { CaretDoubleDown } from 'phosphor-react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   position: relative;
@@ -51,7 +51,10 @@ export const ImagePerson = styled(Image)`
   border-radius: 160px;
 
   border: 2px solid ${({ theme }) => theme.colors.primary};
-  filter: drop-shadow(0 0 8px rgba(255, 74, 62, 0.5));
+
+  ${({ theme }) => css`
+    filter: drop-shadow(0 0 8px ${theme.colors.primary}80);
+  `}
 
   @media (max-width: 576px) {
     width: 200px;
