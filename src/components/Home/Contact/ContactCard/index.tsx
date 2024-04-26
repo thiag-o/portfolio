@@ -17,8 +17,8 @@ export default function ContactCard({ name, image, href }: IContactCard) {
         src={`/contact-icons/${image}.svg`}
         alt="linkedin"
         priority
-        width={32}
-        height={32}
+        width={24}
+        height={24}
       />
       <Text>{name}</Text>
     </Container>

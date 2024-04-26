@@ -13,15 +13,26 @@ export default function Projects() {
     speed: 500,
     slidesToShow: 3,
     centerMode: false,
-    rows: 2,
-    slidesToScroll: 2,
+    rows: 1,
+    dotsClass: 'slick-dots',
+    slidesToScroll: 1,
     responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          rows: 1,
+          infinite: true,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          rows: 2,
+          slidesToShow: 1,
+          rows: 1,
           infinite: true,
+          arrows: false,
+          dots: true,
         },
       },
       // {
@@ -38,31 +49,13 @@ export default function Projects() {
     <Container>
       <Content className="container">
         <HeaderSection name="Projetos" centered />
+
         <Slider {...settings}>
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <Project key={item} />
-          ))}
           {[1, 2, 3, 4, 5, 6].map((item) => (
             <Project key={item} />
           ))}
         </Slider>
       </Content>
-      {/* <ProjectList>
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <Project key={item} />
-            ))}
-          </ProjectList>{' '}
-          <ProjectList>
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <Project key={item} />
-            ))}
-          </ProjectList>
-        
-        <ProjectList>
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <Project key={item} />
-          ))}
-        </ProjectList> */}
     </Container>
   );
 }

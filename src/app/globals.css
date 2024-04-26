@@ -24,8 +24,17 @@ body {
   max-width: 1566px;
 }
 
+
 @media (max-width: 1566px) {
   .container {
     max-width: 1200px;
   }
 }
+@media (max-width: 576px) {
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+

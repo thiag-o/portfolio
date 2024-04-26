@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components';
 
+import CommonButton from '@/components/Shared/CommonButton';
+
 export const Container = styled.section`
   position: relative;
   padding-top: 80px;
+  padding-bottom: 40px;
 
   ${({ theme }) => css`
     background: linear-gradient(
@@ -49,25 +52,10 @@ export const Form = styled.form`
   gap: 16px;
 `;
 
-export const SendButton = styled.button`
-  color: ${({ theme }) => theme.colors.grays['w']};
-
-  padding: 20px;
-
-  border: none;
-  border-radius: 4px;
-
-  outline: none;
-  background-color: ${({ theme }) => theme.colors.primary};
-
-  font-size: 1.25rem;
-  font-weight: ${({ theme }) => theme.fontWeight.bold};
-  line-height: 1;
-  letter-spacing: 0.02rem;
-  /* filter: brightness(0.89); */
-
-  cursor: pointer;
+export const SendButton = styled(CommonButton)`
+  padding: 16px;
   transition: all 0.2s ease-in-out;
+  font-size: 1.1rem;
 
   &:hover,
   &:focus-visible {

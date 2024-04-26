@@ -35,7 +35,7 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  height: 300px;
+  height: 200px;
   width: 100%;
 
   outline: none;

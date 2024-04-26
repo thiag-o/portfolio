@@ -5,7 +5,7 @@ export const Container = styled(Link).attrs({
   target: '_blank',
 })`
   width: 100%;
-  padding: 18px;
+  padding: 12px;
   border: 2px solid transparent;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -35,17 +35,14 @@ export const Container = styled(Link).attrs({
     flex-direction: column;
 
     img {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
     }
   }
 `;
 
 export const Text = styled.span`
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: ${({ theme }) => theme.fontWeight.medium};
   line-height: 1;
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
 `;

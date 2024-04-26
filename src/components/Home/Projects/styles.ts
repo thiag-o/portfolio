@@ -1,10 +1,19 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   position: relative;
   min-height: 100vh;
-
+  ${({ theme }) => css`
+    background: linear-gradient(
+        ${theme.colors.grays['c10']}f2,
+        ${theme.colors.grays['c10']}f2
+      ),
+      url('/projects/bg/bg.jpg');
+  `}
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 80px;
+  padding-bottom: 40px;
 `;
 export const Content = styled.div`
   max-width: 1200px;
@@ -14,17 +23,6 @@ export const Content = styled.div`
 
   color: ${({ theme }) => theme.colors.grays['c2']};
 
-  p {
-    margin-bottom: 16px;
-
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: ${({ theme }) => theme.fontWeight.regular};
-
-    @media (max-width: 567px) {
-      font-size: 0.875rem;
-    }
-  }
   .slick-list {
     margin: 0 -7px;
     & .slick-slide > div {
@@ -34,6 +32,21 @@ export const Content = styled.div`
         padding: 4px;
       }
     }
+  }
+
+  .slick-dots {
+    bottom: -30px;
+    li button {
+      &::before {
+        font-size: 8px;
+
+        color: ${({ theme }) => theme.colors.primary};
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 0 10px;
   }
 `;
 
