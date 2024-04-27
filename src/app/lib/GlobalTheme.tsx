@@ -3,7 +3,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyles } from '@/global/GlobalStyles';
-import theme from '@/global/theme';
+import { lightTheme, theme } from '@/global/theme';
 
 interface IGlobalThemeProps {
   children: React.ReactNode;

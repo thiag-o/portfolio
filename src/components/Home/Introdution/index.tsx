@@ -14,6 +14,7 @@ import {
   Person,
   TitlePerson,
 } from './styles';
+import Typing from './Typing';
 
 export default function Introduction() {
   const { scrollYProgress } = useScroll();
@@ -35,7 +36,8 @@ export default function Introduction() {
           <TitlePerson>
             Oi, eu sou <strong>Thiago Mansano</strong>
           </TitlePerson>
-          <DescriptionPerson>Um desenvolvedor web</DescriptionPerson>
+          <Typing />
+          {/* <DescriptionPerson>Um desenvolvedor web</DescriptionPerson> */}
         </Person>
 
         <AdditionalInfo>

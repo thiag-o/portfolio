@@ -3,7 +3,10 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 * {
   box-sizing: border-box;
-
+  &::selection{
+    background-color: ${({ theme }) => theme.colors.primary}A6;
+   
+  }
 }
 
 ul,
