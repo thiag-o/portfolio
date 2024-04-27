@@ -6,6 +6,7 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
   position: relative;
   min-height: 100vh;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
 export const ImgBackground = styled(motion.div)`
