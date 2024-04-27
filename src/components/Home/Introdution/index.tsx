@@ -1,5 +1,5 @@
 import { useScroll, useTransform } from 'framer-motion';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import {
   AddicionalTitle,
@@ -17,8 +17,9 @@ import {
 
 export default function Introduction() {
   const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '70%']);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.3, 0]);
+
+  const y = useTransform(scrollYProgress, [0, 0.25], ['0%', '40%']);
+  const opacity = useTransform(scrollYProgress, [0, 0.25], [0.3, 0]);
 
   return (
     <Container>

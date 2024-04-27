@@ -35,6 +35,8 @@ export const Content = styled.div`
   }
 
   .slick-dots {
+  }
+  .slick-dots {
     bottom: -30px;
     li button {
       &::before {
@@ -42,6 +44,9 @@ export const Content = styled.div`
 
         color: ${({ theme }) => theme.colors.primary};
       }
+    }
+    li button:focus:before {
+      opacity: 1;
     }
   }
 

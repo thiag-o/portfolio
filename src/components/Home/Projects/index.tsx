@@ -2,9 +2,10 @@ import React from 'react';
 import Slider, { Settings } from 'react-slick';
 
 import HeaderSection from '@/components/Shared/HeaderSection';
+import SlideArrow from '@/components/Shared/SlideArrow';
 
 import Project from './Project';
-import { Container, Content, ProjectList } from './styles';
+import { Container, Content } from './styles';
 
 export default function Projects() {
   const settings: Settings = {
@@ -14,6 +15,8 @@ export default function Projects() {
     slidesToShow: 3,
     centerMode: false,
     rows: 1,
+    nextArrow: <SlideArrow direction="next" />,
+    prevArrow: <SlideArrow direction="prev" />,
     dotsClass: 'slick-dots',
     slidesToScroll: 1,
     responsive: [
