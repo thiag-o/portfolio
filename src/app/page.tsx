@@ -5,12 +5,14 @@ import Introduction from '@/components/Home/Introdution';
 import Projects from '@/components/Home/Projects';
 import Technologies from '@/components/Home/Technologies';
 import Footer from '@/components/Shared/Footer';
+import Header from '@/components/Shared/Header';
 
 import { Container, SectionBgShare } from './styles';
 
 export default function Home() {
   return (
     <Container>
+      <Header />
       <Introduction />
       <SectionBgShare>
         <About />

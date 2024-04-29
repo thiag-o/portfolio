@@ -7,7 +7,6 @@ import {
   AdditionalSubtitle,
   Container,
   Content,
-  DescriptionPerson,
   Icon,
   ImagePerson,
   ImgBackground,
@@ -25,6 +24,7 @@ export default function Introduction() {
   return (
     <Container>
       <ImgBackground style={{ y, opacity }} />
+
       <Content>
         <Person>
           <ImagePerson

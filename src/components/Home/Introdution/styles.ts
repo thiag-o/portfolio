@@ -81,19 +81,6 @@ export const TitlePerson = styled.h1`
     font-size: 1.5rem;
   }
 `;
-export const DescriptionPerson = styled.h2`
-  margin-top: 14px;
-
-  color: ${({ theme }) => theme.colors.grays['c2']};
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  font-weight: ${({ theme }) => theme.fontWeight.regular};
-  line-height: 1;
-
-  @media (max-width: 576px) {
-    margin-top: 10px;
-    font-size: 1.2rem;
-  }
-`;
 export const AdditionalInfo = styled.div`
   align-self: end;
   display: flex;
