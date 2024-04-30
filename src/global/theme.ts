@@ -1,4 +1,4 @@
-const theme = {
+const darkTheme = {
   colors: {
     primary: '#FE4A3E',
 
@@ -30,9 +30,9 @@ const theme = {
 };
 
 const lightTheme = {
-  ...theme,
+  ...darkTheme,
   colors: {
-    ...theme.colors,
+    ...darkTheme.colors,
     grays: {
       c12: '#FFFFFF',
       c11: '#F7F7F7',
@@ -50,6 +50,5 @@ const lightTheme = {
     },
   },
 };
-console.log({ lightTheme, theme });
 
-export { lightTheme, theme };
+export { darkTheme, lightTheme };

@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
 
+import Contexts from './lib/Contexts';
 import GlobalTheme from './lib/GlobalTheme';
 import StyledComponentsRegistry from './lib/registry';
 
@@ -23,7 +24,7 @@ export default function RootLayout({
     <html lang="pt_br">
       <body className={`${raleway.className} ${raleway.variable}`}>
         <StyledComponentsRegistry>
-          <GlobalTheme>{children}</GlobalTheme>
+          <Contexts>{children}</Contexts>
         </StyledComponentsRegistry>
       </body>
     </html>

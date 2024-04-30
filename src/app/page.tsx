@@ -11,16 +11,18 @@ import { Container, SectionBgShare } from './styles';
 
 export default function Home() {
   return (
-    <Container>
-      <Header />
-      <Introduction />
-      <SectionBgShare>
-        <About />
-        <Technologies />
-      </SectionBgShare>
-      <Projects />
-      <Contact />
-      <Footer />
-    </Container>
+    <>
+      <Container>
+        <Header />
+        <Introduction />
+        <SectionBgShare>
+          <About />
+          <Technologies />
+        </SectionBgShare>
+        <Projects />
+        <Contact />
+        <Footer />
+      </Container>
+    </>
   );
 }
