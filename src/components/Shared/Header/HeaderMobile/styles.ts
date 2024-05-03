@@ -17,15 +17,16 @@ export const HeaderMobileContainer = styled.header`
 `;
 
 export const HeaderMobileButton = styled(CommonButton)`
-  display: none;
-  @media (max-width: 768px) {
-    display: block;
-    padding: 0;
-    height: 48px;
-    width: 48px;
-    background-color: transparent;
+  display: block;
+  padding: 0;
+  height: 48px;
+  width: 48px;
+  background-color: transparent;
+  color: ${({ theme }) => theme.colors.grays['w']};
+  border-radius: 24px;
 
-    border-radius: 24px;
+  * {
+    transition: all 400ms ease, color 0ms ease !important;
   }
 `;
 
@@ -82,13 +83,12 @@ export const NavigationItem = styled.li`
 `;
 
 export const Icon = styled.div`
-  @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-    width: 48px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  color: ${({ theme }) => theme.colors.grays['w']};
 `;
 
 export const ThemeItem = styled.li``;

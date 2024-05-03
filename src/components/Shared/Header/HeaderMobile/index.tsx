@@ -44,7 +44,6 @@ export default function HeaderMobile() {
       height: '100%',
       transition: {
         duration: 0.2,
-
         type: 'tween',
       },
     } as TargetAndTransition,
