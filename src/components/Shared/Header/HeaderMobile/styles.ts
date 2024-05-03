@@ -97,9 +97,8 @@ export const ThemeButton = styled(motion(CommonButton))`
   background-color: transparent;
   padding: 0;
   font-size: 20px;
+  color: ${({ theme }) => theme.colors.grays['w']};
 
-  @media (max-width: 768px) {
-    height: 48px;
-    width: 48px;
-  }
+  height: 48px;
+  width: 48px;
 `;

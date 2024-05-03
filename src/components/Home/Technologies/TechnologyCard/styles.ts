@@ -24,7 +24,7 @@ export const Container = styled(motion.div)`
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
-  background-color: ${({ theme }) => theme.colors.grays['c9']};
+  background-color: ${({ theme }) => theme.colors.backgroundCard};
 
   @media (min-width: 1566px) {
     width: 140px;

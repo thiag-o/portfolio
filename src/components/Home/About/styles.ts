@@ -9,8 +9,8 @@ export const Container = styled.section`
   ${({ theme }) => css`
     background: linear-gradient(
       180deg,
-      ${theme.colors.grays['c10']} 71%,
-      ${theme.colors.grays['c10']}F2 100%
+      ${theme.colors.background} 71%,
+      ${theme.colors.backgroundTransparent} 100%
     );
   `}
 
@@ -70,5 +70,5 @@ export const QuoteAuthor = styled.div`
 export const QuoteDivider = styled.div`
   width: 100%;
   height: 1px;
-  background: ${({ theme }) => theme.colors.grays['c9']};
+  background: ${({ theme }) => theme.colors.backgroundCard};
 `;

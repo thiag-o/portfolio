@@ -9,8 +9,8 @@ export const Container = styled.section`
 
   ${({ theme }) => css`
     background: linear-gradient(
-        ${theme.colors.grays['c10']}E3,
-        ${theme.colors.grays['c10']}E3
+        ${theme.colors.backgroundTransparent},
+        ${theme.colors.backgroundTransparent}
       ),
       url('/contact.jpg');
   `}

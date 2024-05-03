@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.footer`
   border-top: 4px solid ${({ theme }) => theme.colors.primary};
   padding: 40px 0;
-  background-color: ${({ theme }) => theme.colors.grays['c10']};
+  background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.grays['c2']};
 
   @media (max-width: 576px) {

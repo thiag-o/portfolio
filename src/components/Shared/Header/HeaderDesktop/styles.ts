@@ -10,6 +10,9 @@ export const HeaderDesktopContainer = styled.header`
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -46,4 +49,5 @@ export const ThemeButton = styled(motion(Button))`
   background-color: transparent;
   padding: 0;
   font-size: 20px;
+  color: ${({ theme }) => theme.colors.grays['w']};
 `;

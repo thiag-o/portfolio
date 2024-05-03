@@ -6,7 +6,9 @@ import HeaderDesktop from './HeaderDesktop';
 import HeaderMobile from './HeaderMobile';
 
 export default function Header() {
-  const [width] = useWindowSize();
-
-  return <>{width >= 768 ? <HeaderDesktop /> : <HeaderMobile />}</>;
+  return (
+    <>
+      <HeaderDesktop /> <HeaderMobile />
+    </>
+  );
 }

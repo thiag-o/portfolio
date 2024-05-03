@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  background-color: ${({ theme }) => theme.colors.grays['c10']};
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const SectionBgShare = styled.div`

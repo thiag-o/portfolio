@@ -22,7 +22,7 @@ export const Input = styled.input`
   line-height: 1.5;
   padding: 12px;
 
-  background-color: ${({ theme }) => theme.colors.grays['w']}17;
+  background-color: ${({ theme }) => theme.colors.backgroundField};
   backdrop-filter: blur(8px);
 
   color: ${({ theme }) => theme.colors.grays['c2']};
@@ -63,7 +63,7 @@ export const TextArea = styled.textarea`
   line-height: 1.5;
   padding: 12px;
 
-  background-color: ${({ theme }) => theme.colors.grays['w']}17;
+  background-color: ${({ theme }) => theme.colors.backgroundField};
   backdrop-filter: blur(8px);
   color: ${({ theme }) => theme.colors.grays['c2']};
 

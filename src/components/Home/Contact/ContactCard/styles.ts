@@ -19,7 +19,7 @@ export const Container = styled(Link).attrs({
   text-decoration: none;
 
   border-radius: 4px;
-  background-color: ${({ theme }) => theme.colors.grays['c9']};
+  background-color: ${({ theme }) => theme.colors.backgroundCard};
 
   cursor: pointer;
 
@@ -27,6 +27,10 @@ export const Container = styled(Link).attrs({
 
   &:hover {
     border-color: ${({ theme }) => theme.colors.grays['c7']};
+  }
+
+  img {
+    filter: brightness(${({ theme }) => theme.imgBrightness});
   }
 
   @media (max-width: 768px) {

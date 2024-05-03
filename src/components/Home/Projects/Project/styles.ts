@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const Header = styled.div`
   padding: 20px;
   width: 100%;
-  background-color: ${({ theme }) => theme.colors.grays['c10']};
+  background-color: ${({ theme }) => theme.colors.background};
   border-radius: 8px;
   border-bottom: solid 2px ${({ theme }) => theme.colors.primary};
 
@@ -32,8 +32,8 @@ export const Body = styled.div`
 
   ${({ theme }) => css`
     background: linear-gradient(
-        ${theme.colors.grays['c10']}99,
-        ${theme.colors.grays['c10']}99
+        ${theme.colors.background}99,
+        ${theme.colors.background}99
       ),
       url('/projects/bg/bg-card.jpg');
   `}
@@ -92,5 +92,9 @@ export const ButtonPrimary = styled(CommonButton)`
 `;
 export const ButtonSecundary = styled(CommonButton)`
   width: 100px;
-  background-color: ${({ theme }) => theme.colors.grays['c9']};
+  background-color: ${({ theme }) => theme.colors.backgroundCard};
+
+  img {
+    filter: brightness(${({ theme }) => theme.imgBrightness});
+  }
 `;

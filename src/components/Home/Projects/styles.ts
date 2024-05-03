@@ -5,8 +5,8 @@ export const Container = styled.section`
   min-height: 100vh;
   ${({ theme }) => css`
     background: linear-gradient(
-        ${theme.colors.grays['c10']}f2,
-        ${theme.colors.grays['c10']}f2
+        ${theme.colors.backgroundTransparent},
+        ${theme.colors.backgroundTransparent}
       ),
       url('/projects/bg/bg.jpg');
   `}

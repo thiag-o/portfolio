@@ -17,7 +17,17 @@ const darkTheme = {
       c11: '#111111',
       c12: '#000000',
     },
+
+    background: '#2E2E2E',
+    backgroundTransparent: '#2E2E2EF2',
+
+    backgroundCard: '#404040',
+
+    backgroundField: '#FFFFFF17',
   },
+  imgBrightness: 1,
+
+  imgIntrodutionOpacity: 0.3,
 
   fontFamily: 'var(--font-default)',
 
@@ -36,8 +46,8 @@ const lightTheme = {
     grays: {
       c12: '#FFFFFF',
       c11: '#F7F7F7',
-      c10: '#F7F7F7',
-      c9: '#EDEDED',
+      c10: '#EDEDED',
+      c9: '#DEDEDE',
       c8: '#CCCCCC',
       c7: '#B2B2B2',
       c6: '#9C9C9C',
@@ -48,7 +58,14 @@ const lightTheme = {
       c1: '#111111',
       w: '#000000',
     },
+    background: '#F7F7F7',
+
+    backgroundTransparent: '#f7f7f7f2',
+    backgroundCard: '#FAFAFA',
+    backgroundField: '#FFFFFF',
   },
+  imgIntrodutionOpacity: 0.2,
+  imgBrightness: 0,
 };
 
 export { darkTheme, lightTheme };

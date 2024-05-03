@@ -1,5 +1,6 @@
 import { useScroll, useTransform } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
+import { useTheme } from 'styled-components';
 
 import {
   AddicionalTitle,
@@ -16,10 +17,15 @@ import {
 import Typing from './Typing';
 
 export default function Introduction() {
+  const { imgIntrodutionOpacity } = useTheme();
   const { scrollYProgress } = useScroll();
 
   const y = useTransform(scrollYProgress, [0, 0.25], ['0%', '40%']);
-  const opacity = useTransform(scrollYProgress, [0, 0.25], [0.3, 0]);
+  const opacity = useTransform(
+    scrollYProgress,
+    [0, 0.25],
+    [imgIntrodutionOpacity, 0]
+  );
 
   return (
     <Container>
