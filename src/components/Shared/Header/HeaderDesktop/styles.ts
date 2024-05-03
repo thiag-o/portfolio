@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import { Button } from '../CommonButton/styles';
+import { Button } from '../../CommonButton/styles';
 
-export const Container = styled.header`
+export const HeaderDesktopContainer = styled.header`
   position: fixed;
   width: 100%;
   top: 15px;
