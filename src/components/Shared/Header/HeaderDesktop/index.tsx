@@ -1,6 +1,6 @@
 import { Moon, Sun } from 'phosphor-react';
-import React from 'react';
-import { Link } from 'react-scroll';
+import React, { useEffect } from 'react';
+import { Events, Link } from 'react-scroll';
 
 import { useChangeTheme } from '@/hooks/useChangeTheme';
 import useWindowSize from '@/hooks/useWindowSize';
@@ -11,6 +11,7 @@ import {
   Logo,
   Navigation,
   NavigationItem,
+  NavigationLink,
   NavigationList,
   ThemeButton,
   ThemeItem,
@@ -31,18 +32,18 @@ export default function HeaderDesktop() {
         <Navigation>
           <NavigationList>
             <NavigationItem>
-              <Link to="">Sobre</Link>
+              <NavigationLink to="about">Sobre</NavigationLink>
             </NavigationItem>
             <NavigationItem>
-              <Link to="">Tecnologias</Link>
+              <NavigationLink to="">Tecnologias</NavigationLink>
             </NavigationItem>
             <NavigationItem>
-              <Link to="">Projetos</Link>
+              <NavigationLink to="">Projetos</NavigationLink>
             </NavigationItem>
             <NavigationItem>
-              <Link to="">Contato</Link>
+              <NavigationLink to="">Contato</NavigationLink>
             </NavigationItem>
-            <ThemeItem>
+            {/* <ThemeItem>
               {themeProvider === 'dark' ? (
                 <ThemeButton
                   onClick={() => handleChangeThemeProvider('light')}
@@ -60,7 +61,7 @@ export default function HeaderDesktop() {
                   <Moon weight="bold" />
                 </ThemeButton>
               )}
-            </ThemeItem>
+            </ThemeItem> */}
           </NavigationList>
         </Navigation>
       </Wrapper>

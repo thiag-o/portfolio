@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 import { Button } from '../../CommonButton/styles';
@@ -40,8 +41,18 @@ export const NavigationItem = styled.li`
   a {
     font-size: 1rem;
     cursor: pointer;
+    &.active {
+      color: red;
+    }
   }
 `;
+
+export const NavigationLink = styled(Link).attrs({
+  spy: true,
+  offset: -30,
+  smooth: true,
+  activeClass: 'active',
+})``;
 
 export const ThemeItem = styled.li``;
 

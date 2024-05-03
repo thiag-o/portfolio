@@ -18,6 +18,7 @@ import { Link } from 'react-scroll';
 
 import { useChangeTheme } from '@/hooks/useChangeTheme';
 
+import { NavigationLink } from '../HeaderDesktop/styles';
 import {
   Content,
   Hamburger,
@@ -69,43 +70,43 @@ export default function HeaderMobile() {
           </HeaderMobileButton>
 
           <Content>
-            <Link to="">
+            <NavigationLink to="about">
               <Icon>
                 <House size={28} />
               </Icon>
-            </Link>
+            </NavigationLink>
 
             <Navigation>
               <NavigationList>
                 <NavigationItem>
-                  <Link to="">
+                  <NavigationLink to="about">
                     <Icon>
                       <Person size={28} />
                     </Icon>
-                  </Link>
+                  </NavigationLink>
                 </NavigationItem>
                 <NavigationItem>
-                  <Link to="">
+                  <NavigationLink to="">
                     <Icon>
                       <Atom size={28} />
                     </Icon>
-                  </Link>
+                  </NavigationLink>
                 </NavigationItem>
                 <NavigationItem>
-                  <Link to="">
+                  <NavigationLink to="">
                     <Icon>
                       <Monitor size={28} />
                     </Icon>
-                  </Link>
+                  </NavigationLink>
                 </NavigationItem>
                 <NavigationItem>
-                  <Link to="">
+                  <NavigationLink to="">
                     <Icon>
                       <ChatTeardropDots size={32} />
                     </Icon>
-                  </Link>
+                  </NavigationLink>
                 </NavigationItem>
-                <ThemeItem>
+                {/* <ThemeItem>
                   {themeProvider === 'dark' ? (
                     <ThemeButton
                       onClick={() => handleChangeThemeProvider('light')}
@@ -119,7 +120,7 @@ export default function HeaderMobile() {
                       <Moon weight="bold" />
                     </ThemeButton>
                   )}
-                </ThemeItem>
+                </ThemeItem> */}
               </NavigationList>
             </Navigation>
           </Content>

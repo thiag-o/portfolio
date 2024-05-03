@@ -60,9 +60,7 @@ export const Wrapper = styled(motion.div)`
 export const Logo = styled.a``;
 
 export const Navigation = styled.nav`
-  @media (max-width: 768px) {
-    margin-top: 24px;
-  }
+  margin-top: 24px;
 `;
 
 export const NavigationList = styled.ul`
