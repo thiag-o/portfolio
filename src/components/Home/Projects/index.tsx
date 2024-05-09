@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import Slider, { Settings } from 'react-slick';
 
 import HeaderSection from '@/components/Shared/HeaderSection';
@@ -49,16 +50,18 @@ export default function Projects() {
     ],
   };
   return (
-    <Container>
-      <Content className="container">
-        <HeaderSection name="Projetos" centered />
+    <Element name="projects">
+      <Container>
+        <Content className="container">
+          <HeaderSection name="Projetos" centered />
 
-        <Slider {...settings}>
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <Project key={item} />
-          ))}
-        </Slider>
-      </Content>
-    </Container>
+          <Slider {...settings}>
+            {[1, 2, 3, 4, 5, 6].map((item) => (
+              <Project key={item} />
+            ))}
+          </Slider>
+        </Content>
+      </Container>
+    </Element>
   );
 }

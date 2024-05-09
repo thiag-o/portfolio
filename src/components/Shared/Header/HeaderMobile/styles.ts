@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Squash } from 'hamburger-react';
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 import CommonButton from '../../CommonButton';
@@ -87,6 +88,23 @@ export const Icon = styled.div`
   height: 48px;
   width: 48px;
   color: ${({ theme }) => theme.colors.grays['w']};
+  transition: 0.2s ease-in-out;
+`;
+export const NavigationLink = styled(Link).attrs({
+  spy: true,
+  offset: -30,
+  smooth: true,
+  activeClass: 'active',
+})`
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  &.active {
+    ${Icon} {
+      color: ${({ theme }) => theme.colors.primary};
+    }
+  }
 `;
 
 export const ThemeItem = styled.li``;

@@ -18,7 +18,6 @@ import { Link } from 'react-scroll';
 
 import { useChangeTheme } from '@/hooks/useChangeTheme';
 
-import { NavigationLink } from '../HeaderDesktop/styles';
 import {
   Content,
   Hamburger,
@@ -27,6 +26,7 @@ import {
   Icon,
   Navigation,
   NavigationItem,
+  NavigationLink,
   NavigationList,
   ThemeButton,
   ThemeItem,
@@ -70,7 +70,7 @@ export default function HeaderMobile() {
           </HeaderMobileButton>
 
           <Content>
-            <NavigationLink to="about">
+            <NavigationLink to="introduction">
               <Icon>
                 <House size={28} />
               </Icon>
@@ -86,21 +86,21 @@ export default function HeaderMobile() {
                   </NavigationLink>
                 </NavigationItem>
                 <NavigationItem>
-                  <NavigationLink to="">
+                  <NavigationLink to="technologies">
                     <Icon>
                       <Atom size={28} />
                     </Icon>
                   </NavigationLink>
                 </NavigationItem>
                 <NavigationItem>
-                  <NavigationLink to="">
+                  <NavigationLink to="projects">
                     <Icon>
                       <Monitor size={28} />
                     </Icon>
                   </NavigationLink>
                 </NavigationItem>
                 <NavigationItem>
-                  <NavigationLink to="">
+                  <NavigationLink to="contact">
                     <Icon>
                       <ChatTeardropDots size={32} />
                     </Icon>

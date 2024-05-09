@@ -28,20 +28,20 @@ export default function HeaderDesktop() {
   return (
     <HeaderDesktopContainer className="container">
       <Wrapper>
-        <Logo>Logo</Logo>
+        <Logo to="introduction">Logo</Logo>
         <Navigation>
           <NavigationList>
             <NavigationItem>
               <NavigationLink to="about">Sobre</NavigationLink>
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink to="">Tecnologias</NavigationLink>
+              <NavigationLink to="technologies">Tecnologias</NavigationLink>
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink to="">Projetos</NavigationLink>
+              <NavigationLink to="projects">Projetos</NavigationLink>
             </NavigationItem>
             <NavigationItem>
-              <NavigationLink to="">Contato</NavigationLink>
+              <NavigationLink to="contact">Contato</NavigationLink>
             </NavigationItem>
             {/* <ThemeItem>
               {themeProvider === 'dark' ? (

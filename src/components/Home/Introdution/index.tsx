@@ -1,5 +1,6 @@
 import { useScroll, useTransform } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
+import { Element } from 'react-scroll';
 import { useTheme } from 'styled-components';
 
 import {
@@ -28,35 +29,39 @@ export default function Introduction() {
   );
 
   return (
-    <Container>
-      <ImgBackground style={{ y, opacity }} />
+    <Element name="introduction">
+      <Container>
+        <ImgBackground style={{ y, opacity }} />
 
-      <Content>
-        <Person>
-          <ImagePerson
-            width={250}
-            height={250}
-            src="https://github.com/thiag-o.png"
-            alt="foto de thiago"
-          />
-          <TitlePerson>
-            Oi, eu sou <strong>Thiago Mansano</strong>
-          </TitlePerson>
-          <Typing />
-          {/* <DescriptionPerson>Um desenvolvedor web</DescriptionPerson> */}
-        </Person>
+        <Content>
+          <Person>
+            <ImagePerson
+              width={250}
+              height={250}
+              src="https://github.com/thiag-o.png"
+              alt="foto de thiago"
+            />
+            <TitlePerson>
+              Oi, eu sou <strong>Thiago Mansano</strong>
+            </TitlePerson>
+            <Typing />
+            {/* <DescriptionPerson>Um desenvolvedor web</DescriptionPerson> */}
+          </Person>
 
-        <AdditionalInfo>
-          <AddicionalTitle>Bacharel em ciência da computação.</AddicionalTitle>
+          <AdditionalInfo>
+            <AddicionalTitle>
+              Bacharel em ciência da computação.
+            </AddicionalTitle>
 
-          <AdditionalSubtitle>
-            Atualmente trabalhando no ramo de tecnologia como desenvolvedor
-            front-end.
-          </AdditionalSubtitle>
+            <AdditionalSubtitle>
+              Atualmente trabalhando no ramo de tecnologia como desenvolvedor
+              front-end.
+            </AdditionalSubtitle>
 
-          <Icon />
-        </AdditionalInfo>
-      </Content>
-    </Container>
+            <Icon />
+          </AdditionalInfo>
+        </Content>
+      </Container>
+    </Element>
   );
 }
