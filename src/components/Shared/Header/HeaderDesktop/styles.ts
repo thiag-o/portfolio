@@ -48,7 +48,7 @@ export const NavigationItem = styled.li``;
 
 export const NavigationLink = styled(Link).attrs({
   spy: true,
-  offset: -30,
+  offset: -50,
   smooth: true,
   activeClass: 'active',
 })`

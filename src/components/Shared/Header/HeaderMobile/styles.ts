@@ -92,7 +92,7 @@ export const Icon = styled.div`
 `;
 export const NavigationLink = styled(Link).attrs({
   spy: true,
-  offset: -30,
+  offset: -10,
   smooth: true,
   activeClass: 'active',
 })`
