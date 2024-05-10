@@ -5,24 +5,30 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "email": "email dev",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+
     "framer-motion": "^11.1.7",
     "hamburger-react": "^2.5.0",
     "next": "14.2.2",
+    "nodemailer": "^6.9.13",
     "phosphor-react": "^1.4.1",
     "react": "^18",
     "react-dom": "^18",
+
     "react-scroll": "^1.9.0",
     "react-slick": "^0.30.2",
     "react-type-animation": "^3.2.0",
     "slick-carousel": "^1.8.1",
+    "sonner": "^1.4.41",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-scroll": "^1.8.10",
