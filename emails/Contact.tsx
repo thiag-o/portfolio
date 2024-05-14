@@ -17,9 +17,10 @@ import React from 'react';
 const baseUrl =
   'https://portfolio-git-main-thiagos-projects-394c4155.vercel.app';
 
-const github = 'contact-icons/github-black.svg';
-const linkedin = 'contact-icons/linkedin-black.svg';
-const logo = 'logo-black.svg';
+const github = baseUrl + '/contact-icons/github-black.svg';
+const linkedin = baseUrl + '/contact-icons/linkedin-black.svg';
+const email = baseUrl + '/contact-icons/email-black.svg';
+const logo = baseUrl + '/logo-black.svg';
 
 export default function Contact() {
   return (
@@ -51,23 +52,21 @@ export default function Contact() {
           <Section style={footer}>
             <Row>
               <Column>
-                <Button>
-                  <Img
-                    height={32}
-                    width={32}
-                    src={`${baseUrl}/${github}`}
-                    alt="github"
-                  />
+                <Button style={button} href="https://github.com/thiag-o">
+                  <Img height={32} width={32} src={github} alt="github" />
                 </Button>
               </Column>
               <Column>
-                <Button>
-                  <Img
-                    height={32}
-                    width={32}
-                    src={`${baseUrl}/${linkedin}`}
-                    alt="linkedin"
-                  />
+                <Button
+                  style={button}
+                  href="https://www.linkedin.com/in/thiago-borges-mansano-5b67811a2/"
+                >
+                  <Img height={32} width={32} src={linkedin} alt="linkedin" />
+                </Button>
+              </Column>
+              <Column>
+                <Button style={button} href="mailto:thiagobmansano@gmail.com">
+                  <Img height={32} width={32} src={email} alt="email" />
                 </Button>
               </Column>
             </Row>
@@ -77,6 +76,7 @@ export default function Contact() {
     </Html>
   );
 }
+// https://wa.me/5514996640587
 
 const primaryColor = '#FE4A3E';
 const blackTone = '#2E2E2E';
@@ -99,10 +99,12 @@ const h3: React.CSSProperties = {
 const strong: React.CSSProperties = {
   color: primaryColor,
 };
+
 const p: React.CSSProperties = {
   margin: 0,
   color: blackTone,
 };
+
 const subjectContainer: React.CSSProperties = {
   borderLeftWidth: '4px',
   borderLeftStyle: 'solid',
@@ -118,5 +120,16 @@ const container: React.CSSProperties = {
 
 const footer: React.CSSProperties = {
   margin: 0,
-  width: 'fit-content',
+  width: '160px',
+};
+
+const button: React.CSSProperties = {
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  border: `1px solid ${primaryColor}`,
+  width: '40px',
+  height: '40px',
+  borderRadius: '40px',
 };
