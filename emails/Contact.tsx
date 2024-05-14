@@ -19,10 +19,16 @@ const baseUrl =
 
 const github = baseUrl + '/contact-icons/github-black.svg';
 const linkedin = baseUrl + '/contact-icons/linkedin-black.svg';
-const email = baseUrl + '/contact-icons/email-black.svg';
+const emailLogo = baseUrl + '/contact-icons/email-black.svg';
 const logo = baseUrl + '/logo-black.svg';
 
-export default function Contact() {
+interface IContactProps {
+  name: string;
+  email: string;
+  subject: string;
+}
+
+export default function Contact({ name, email, subject }: IContactProps) {
   return (
     <Html lang="pt-BR">
       <Head></Head>
@@ -33,18 +39,13 @@ export default function Contact() {
           </Heading>
 
           <Text style={h3}>
-            Olá <span style={strong}>Nome</span> quem fala é o Thiago e agradeço
-            pelo seu contato! em breve irei responder a esse email
-            <span style={strong}> nome@email.com</span> sobre o assunto:
+            Olá <span style={strong}>{name}</span> quem fala é o Thiago e
+            agradeço pelo seu contato! em breve irei responder a esse email
+            <span style={strong}> {email}</span> sobre o assunto:
           </Text>
 
           <Section style={subjectContainer}>
-            <Text style={p}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab,
-              nulla odit voluptates quis enim ad quo sunt atque repellat
-              molestiae corrupti quia, aut quibusdam aliquam reprehenderit
-              necessitatibus rem esse.
-            </Text>
+            <Text style={p}>{subject}</Text>
           </Section>
           <Text style={{ ...h3 }}>
             Fique a vontade para falar comigo através das minhas redes:
@@ -66,7 +67,7 @@ export default function Contact() {
               </Column>
               <Column>
                 <Button style={button} href="mailto:thiagobmansano@gmail.com">
-                  <Img height={32} width={32} src={email} alt="email" />
+                  <Img height={32} width={32} src={emailLogo} alt="email" />
                 </Button>
               </Column>
             </Row>
