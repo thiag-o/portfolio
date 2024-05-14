@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Moon, Sun } from 'phosphor-react';
 import React, { useEffect } from 'react';
 import { Events, Link } from 'react-scroll';
@@ -28,7 +29,15 @@ export default function HeaderDesktop() {
   return (
     <HeaderDesktopContainer className="container">
       <Wrapper>
-        <Logo to="introduction">Logo</Logo>
+        <Logo to="introduction">
+          <Image
+            src={'logo.svg'}
+            height={32}
+            width={126}
+            alt="thiag-o"
+            priority
+          />
+        </Logo>
         <Navigation>
           <NavigationList>
             <NavigationItem>

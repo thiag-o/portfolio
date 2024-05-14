@@ -33,10 +33,20 @@ export const Logo = styled(Link).attrs({
   smooth: true,
   activeClass: 'active',
 })`
+  display: flex;
+  align-items: center;
   cursor: pointer;
+
+  img {
+    height: 32px;
+    width: auto;
+  }
 `;
 
-export const Navigation = styled.nav``;
+export const Navigation = styled.nav`
+  display: flex;
+  align-items: center;
+`;
 
 export const NavigationList = styled.ul`
   display: flex;
