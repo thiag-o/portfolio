@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
 import Head from 'next/head';
+import { Toaster } from 'sonner';
 
 import Contexts from './lib/Contexts';
 import GlobalTheme from './lib/GlobalTheme';
@@ -30,6 +31,7 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <Contexts>{children}</Contexts>
         </StyledComponentsRegistry>
+        <Toaster richColors />
       </body>
     </html>
   );

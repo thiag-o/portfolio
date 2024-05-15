@@ -8,8 +8,17 @@ export async function POST(req: NextRequest) {
     const sendMailBody: ISendEmailBody = await req.json();
     await sendMail(sendMailBody);
 
-    return NextResponse.json({ ...sendMail }, { status: 201 });
-  } catch (e) {
-    throw e;
+    return NextResponse.json(
+      { message: 'Email enviado com sucesso!' },
+      { status: 200 }
+    );
+  } catch (error: any) {
+    if (error.message) {
+      return NextResponse.json({ message: error.message });
+    } else {
+      return NextResponse.json({
+        message: 'Falha ao enviar o email, Tente novamente mais tarde.',
+      });
+    }
   }
 }

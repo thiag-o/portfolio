@@ -1,4 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+interface InputAditionalProps {
+  isWrong?: boolean;
+}
 
 export const Container = styled.div``;
 
@@ -9,7 +13,7 @@ export const Label = styled.label`
   margin-bottom: 8px;
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<InputAditionalProps>`
   width: 100%;
   outline: none;
 
@@ -29,12 +33,19 @@ export const Input = styled.input`
 
   transition: all 0.2s ease-in-out;
 
+  ${({ theme, isWrong }) =>
+    isWrong &&
+    css`
+      background-color: ${theme.colors.errorOpacity};
+      border-color: ${theme.colors.error};
+    `}
+
   &:focus {
     border-color: ${({ theme }) => theme.colors.primary};
   }
 `;
 
-export const TextArea = styled.textarea`
+export const TextArea = styled.textarea<InputAditionalProps>`
   height: 200px;
   width: 100%;
 
@@ -69,7 +80,23 @@ export const TextArea = styled.textarea`
 
   transition: all 0.2s ease-in-out;
 
+  ${({ theme, isWrong }) =>
+    isWrong &&
+    css`
+      background-color: ${theme.colors.errorOpacity};
+      border-color: ${theme.colors.error};
+    `}
+
   &:focus {
     border-color: ${({ theme }) => theme.colors.primary};
   }
+`;
+
+export const ErrorMessage = styled.span`
+  display: block;
+  margin-top: 4px;
+  font-size: 0.875rem;
+  color: ${({ theme }) => theme.colors.error};
+  font-weight: 500;
+  /* color: ; */
 `;

@@ -24,6 +24,9 @@ const darkTheme = {
     backgroundCard: '#404040',
 
     backgroundField: '#FFFFFF17',
+
+    error: '#FF3D3D',
+    errorOpacity: '#FF3D3D17',
   },
   imgBrightness: 1,
 

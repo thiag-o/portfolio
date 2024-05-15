@@ -19,7 +19,7 @@ export const HeaderDesktopContainer = styled.header`
 export const Wrapper = styled.div`
   width: 100%;
   display: flex;
-  padding: 24px 48px;
+  padding: 20px 40px;
   justify-content: space-between;
   background-color: ${({ theme }) => theme.colors.grays['c12']}80;
   backdrop-filter: blur(15px);
