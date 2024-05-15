@@ -10,9 +10,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "resolutions": {
-    "strip-ansi": "6.0.0"
-  },
+
   "dependencies": {
     "@react-email/components": "0.0.15",
     "@react-email/render": "^0.0.12",
@@ -45,10 +43,6 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "typescript": "^5"
-  },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
   }
+
 }
