@@ -56,10 +56,20 @@ export const SendButton = styled(CommonButton)`
   padding: 16px;
   transition: all 0.2s ease-in-out;
   font-size: 1.1rem;
+  letter-spacing: 1.2px;
 
   &:hover,
   &:focus-visible {
     box-shadow: 0px 0px 8px 4px ${({ theme }) => theme.colors.primary}80;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: none;
+    }
   }
 `;
 

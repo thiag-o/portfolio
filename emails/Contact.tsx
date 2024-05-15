@@ -17,10 +17,10 @@ import React from 'react';
 const baseUrl =
   'https://portfolio-git-main-thiagos-projects-394c4155.vercel.app';
 
-const github = baseUrl + '/contact-icons/github-black.svg';
-const linkedin = baseUrl + '/contact-icons/linkedin-black.svg';
-const emailLogo = baseUrl + '/contact-icons/email-black.svg';
-const logo = baseUrl + '/logo-black.svg';
+const github = baseUrl + '/contact-icons/img/github-black.jpg';
+const linkedin = baseUrl + '/contact-icons/img/linkedin-black.jpg';
+const emailLogo = baseUrl + '/contact-icons/img/email-black.jpg';
+const logo = baseUrl + '/logo-black.jpg';
 
 interface IContactProps {
   name: string;

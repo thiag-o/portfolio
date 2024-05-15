@@ -26,12 +26,18 @@ interface IFormValues {
   subject: string;
 }
 
+const defaultValues: IFormValues = {
+  name: '',
+  email: '',
+  subject: '',
+};
 export default function Contact() {
   const {
     control,
     watch,
     formState: { errors },
     handleSubmit,
+    reset,
   } = useForm<IFormValues>({
     resolver: zodResolver(resolver),
   });
@@ -40,6 +46,7 @@ export default function Contact() {
 
   async function onSubmit(values: IFormValues) {
     setIsSending(true);
+
     const sendMail = await fetch('/api/email', {
       method: 'POST',
       body: JSON.stringify(values),
@@ -47,11 +54,13 @@ export default function Contact() {
 
     const response = await sendMail.json();
 
-    if (sendMail.status === EHttpStatusCode.OK) {
+    if (sendMail.status === EHttpStatusCode.CREATED) {
       toast.success(response.message);
     } else {
       toast.error(response.message);
     }
+
+    reset(defaultValues);
     setIsSending(false);
   }
 
@@ -86,7 +95,7 @@ export default function Contact() {
                 isTextArea
               />
               <SendButton disabled={isSending} type="submit">
-                {isSending ? 'ENVIANDO' : 'ENVIAR'}
+                {isSending ? 'ENVIANDO...' : 'ENVIAR'}
               </SendButton>
             </Form>
 

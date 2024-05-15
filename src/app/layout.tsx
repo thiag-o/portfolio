@@ -3,7 +3,6 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import type { Metadata } from 'next';
 import { Raleway } from 'next/font/google';
-import Head from 'next/head';
 import { Toaster } from 'sonner';
 
 import Contexts from './lib/Contexts';
@@ -24,9 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt_br">
-      <Head>
+      <head>
         <link rel="shortcut icon" href="favicon.ico" />
-      </Head>
+      </head>
       <body className={`${raleway.className} ${raleway.variable}`}>
         <StyledComponentsRegistry>
           <Contexts>{children}</Contexts>

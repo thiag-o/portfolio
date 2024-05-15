@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(
       { message: 'Email enviado com sucesso!' },
-      { status: 200 }
+      { status: 201 }
     );
   } catch (error: any) {
     if (error.message) {

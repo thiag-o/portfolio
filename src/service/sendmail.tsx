@@ -19,7 +19,8 @@ const transporterConfig: SMTPTransport.Options = {
 export async function sendMail({ email, name, subject }: ISendEmailBody) {
   const transporter = createTransport(transporterConfig);
   const htmlContactTemplate = render(
-    <Contact email={email} name={name} subject={subject} />
+    <Contact email={email} name={name} subject={subject} />,
+    {}
   );
   const info = await transporter.sendMail({
     from: '"thiag-o" <MS_yJAlzl@trial-3vz9dle7m0n4kj50.mlsender.net>',
