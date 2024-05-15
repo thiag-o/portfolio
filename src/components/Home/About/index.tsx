@@ -1,7 +1,7 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 
-import SectionTitle from '~/components/Shared/HeaderSection';
+import SectionTitle from '@/components/Shared/HeaderSection';
 
 import {
   Container,

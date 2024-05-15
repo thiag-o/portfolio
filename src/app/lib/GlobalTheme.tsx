@@ -2,9 +2,9 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { GlobalStyles } from '~/global/GlobalStyles';
-import { darkTheme, lightTheme } from '~/global/theme';
-import { useChangeTheme } from '~/hooks/useChangeTheme';
+import { GlobalStyles } from '@/global/GlobalStyles';
+import { darkTheme, lightTheme } from '@/global/theme';
+import { useChangeTheme } from '@/hooks/useChangeTheme';
 
 interface IGlobalThemeProps {
   children: React.ReactNode;

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-import { ISendEmailBody } from '~/interfaces/sendEmailBody.interface';
-import { sendMail } from '~/service/sendmail';
+import { ISendEmailBody } from '@/interfaces/sendEmailBody.interface';
+import { sendMail } from '@/service/sendmail';
 
 export async function POST(req: NextRequest) {
   try {

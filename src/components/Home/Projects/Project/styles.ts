@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import CommonButton from '~/components/Shared/CommonButton';
+import CommonButton from '@/components/Shared/CommonButton';
 
 export const Container = styled.div`
   display: block;

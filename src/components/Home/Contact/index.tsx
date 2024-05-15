@@ -1,8 +1,8 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 
-import FormField from '~/components/Shared/FormField';
-import HeaderSection from '~/components/Shared/HeaderSection';
+import FormField from '@/components/Shared/FormField';
+import HeaderSection from '@/components/Shared/HeaderSection';
 
 import ContactCard from './ContactCard';
 import {

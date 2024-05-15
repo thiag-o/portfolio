@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 
-import { ChangeThemeProvider } from '~/hooks/useChangeTheme';
+import { ChangeThemeProvider } from '@/hooks/useChangeTheme';
 
 import GlobalTheme from './GlobalTheme';
 
