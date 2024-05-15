@@ -31,7 +31,7 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <Contexts>{children}</Contexts>
         </StyledComponentsRegistry>
-        <Toaster richColors />
+        <Toaster richColors closeButton />
       </body>
     </html>
   );

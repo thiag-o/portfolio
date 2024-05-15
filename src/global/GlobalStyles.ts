@@ -10,7 +10,6 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 ul,
-li,
 p,
 h1,
 h2,
