@@ -2,7 +2,7 @@ import { render } from '@react-email/render';
 import { createTransport } from 'nodemailer';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
-import { ISendEmailBody } from '@/interfaces/sendEmailBody.interface';
+import { ISendEmailBody } from '~/interfaces/sendEmailBody.interface';
 
 import Contact from '../../emails/Contact';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 
-import HeaderSection from '@/components/Shared/HeaderSection';
-import { technologies } from '@/utils/tecnologies';
-import { tools } from '@/utils/tools';
+import HeaderSection from '~/components/Shared/HeaderSection';
+import { technologies } from '~/utils/tecnologies';
+import { tools } from '~/utils/tools';
 
 import {
   Container,

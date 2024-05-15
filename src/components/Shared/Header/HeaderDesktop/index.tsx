@@ -3,8 +3,8 @@ import { Moon, Sun } from 'phosphor-react';
 import React, { useEffect } from 'react';
 import { Events, Link } from 'react-scroll';
 
-import { useChangeTheme } from '@/hooks/useChangeTheme';
-import useWindowSize from '@/hooks/useWindowSize';
+import { useChangeTheme } from '~/hooks/useChangeTheme';
+import useWindowSize from '~/hooks/useWindowSize';
 
 import HeaderMobile from '../HeaderMobile';
 import {

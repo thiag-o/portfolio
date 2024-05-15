@@ -1,6 +1,6 @@
 import React from 'react';
 
-import useWindowSize from '@/hooks/useWindowSize';
+import useWindowSize from '~/hooks/useWindowSize';
 
 import HeaderDesktop from './HeaderDesktop';
 import HeaderMobile from './HeaderMobile';

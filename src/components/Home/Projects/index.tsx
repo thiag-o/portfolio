@@ -2,8 +2,8 @@ import React from 'react';
 import { Element } from 'react-scroll';
 import Slider, { Settings } from 'react-slick';
 
-import HeaderSection from '@/components/Shared/HeaderSection';
-import SlideArrow from '@/components/Shared/SlideArrow';
+import HeaderSection from '~/components/Shared/HeaderSection';
+import SlideArrow from '~/components/Shared/SlideArrow';
 
 import Project from './Project';
 import { Container, Content } from './styles';

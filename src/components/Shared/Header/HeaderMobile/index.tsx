@@ -16,7 +16,7 @@ import {
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
-import { useChangeTheme } from '@/hooks/useChangeTheme';
+import { useChangeTheme } from '~/hooks/useChangeTheme';
 
 import {
   Content,
