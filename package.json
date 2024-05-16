@@ -2,12 +2,16 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+
   "scripts": {
     "dev": "next dev --port=3200 --experimental-https",
     "build": "next build",
     "email": "email dev",
     "start": "next start",
     "lint": "next lint"
+  },
+  "resolutions": {
+    "strip-ansi": "6.0.0"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.4.0",

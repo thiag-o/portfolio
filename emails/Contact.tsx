@@ -54,7 +54,13 @@ export default function Contact({ name, email, subject }: IContactProps) {
             <Row>
               <Column>
                 <Button style={button} href="https://github.com/thiag-o">
-                  <Img height={32} width={32} src={github} alt="github" />
+                  <Img
+                    style={img}
+                    height={24}
+                    width={24}
+                    src={github}
+                    alt="github"
+                  />
                 </Button>
               </Column>
               <Column>
@@ -62,12 +68,24 @@ export default function Contact({ name, email, subject }: IContactProps) {
                   style={button}
                   href="https://www.linkedin.com/in/thiago-borges-mansano-5b67811a2/"
                 >
-                  <Img height={32} width={32} src={linkedin} alt="linkedin" />
+                  <Img
+                    style={img}
+                    height={24}
+                    width={24}
+                    src={linkedin}
+                    alt="linkedin"
+                  />
                 </Button>
               </Column>
               <Column>
                 <Button style={button} href="mailto:thiagobmansano@gmail.com">
-                  <Img height={32} width={32} src={emailLogo} alt="email" />
+                  <Img
+                    style={img}
+                    height={24}
+                    width={24}
+                    src={emailLogo}
+                    alt="email"
+                  />
                 </Button>
               </Column>
             </Row>
@@ -98,7 +116,8 @@ const h3: React.CSSProperties = {
 };
 
 const strong: React.CSSProperties = {
-  color: primaryColor,
+  color: `${primaryColor} !important`,
+  textDecoration: 'none !important',
 };
 
 const p: React.CSSProperties = {
@@ -125,12 +144,21 @@ const footer: React.CSSProperties = {
 };
 
 const button: React.CSSProperties = {
+  boxSizing: 'border-box',
   cursor: 'pointer',
   display: 'flex',
+
+  border: `1px solid ${primaryColor}`,
+  width: 'fit-content',
+  // height: '40px',
+  // width: '40px',
   alignItems: 'center',
   justifyContent: 'center',
-  border: `1px solid ${primaryColor}`,
-  width: '40px',
-  height: '40px',
+
   borderRadius: '40px',
+};
+
+const img: React.CSSProperties = {
+  display: 'block',
+  margin: '8px',
 };
