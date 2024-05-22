@@ -2,8 +2,8 @@ import React from 'react';
 import { Element } from 'react-scroll';
 
 import HeaderSection from '@/components/Shared/HeaderSection';
-import { technologies } from '@/utils/tecnologies';
-import { tools } from '@/utils/tools';
+import { technologies } from '@/constant/tecnologies';
+import { tools } from '@/constant/tools';
 
 import {
   Container,

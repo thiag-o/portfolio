@@ -3,7 +3,9 @@ import styled, { css } from 'styled-components';
 import CommonButton from '@/components/Shared/CommonButton';
 
 export const Container = styled.div`
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border-radius: 8px;
   overflow: hidden;
 `;
@@ -28,7 +30,10 @@ export const Title = styled.h4`
 `;
 
 export const Body = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+  flex: 1;
 
   ${({ theme }) => css`
     background: linear-gradient(
@@ -63,9 +68,10 @@ export const ImageContainer = styled.div`
 `;
 
 export const DescriptionGroup = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
   }
 `;

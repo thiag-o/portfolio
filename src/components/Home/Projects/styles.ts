@@ -27,11 +27,19 @@ export const Content = styled.div`
     margin: 0 -7px;
     & .slick-slide > div {
       padding: 10px;
+      height: 100% !important;
 
       @media (max-width: 768px) {
         padding: 4px;
       }
     }
+  }
+  .slick-track {
+    display: flex !important;
+  }
+
+  .slick-slide {
+    height: inherit !important;
   }
 
   .slick-dots {

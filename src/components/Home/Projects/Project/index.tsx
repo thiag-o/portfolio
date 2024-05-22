@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 import {
@@ -14,32 +15,52 @@ import {
   Title,
 } from './styles';
 
-export default function Project() {
+interface IProjectProps {
+  title: string;
+  description: string;
+  img: {
+    src: string;
+    alt: string;
+  };
+  linkAccess?: string;
+  linkGithub: string;
+}
+
+export default function Project({
+  title,
+  description,
+  img,
+  linkAccess,
+  linkGithub,
+}: IProjectProps) {
+  function handleNavigation(url?: string) {
+    if (!url) return;
+    window.open(url, '_blank');
+  }
+
   return (
     <Container>
       <Header>
-        <Title>Pokedéx React</Title>
+        <Title>{title}</Title>
       </Header>
       <Body>
         <ImageContainer>
           <Image
-            src="/projects/pokedex-react.png"
+            src={img.src}
             width={300}
             height={280}
-            alt="pokedex-react"
+            alt={img.alt}
             unoptimized={true}
           />
         </ImageContainer>
 
         <DescriptionGroup>
-          <DescriptionProject>
-            O Pokedéx React é uma plataforma onde você pode pesquisar por
-            Pokémons, visualizar seus atributos, tipos e evoluções, além de
-            poder salvar seus Pokémons favoritos para referência futura.
-          </DescriptionProject>
+          <DescriptionProject>{description}</DescriptionProject>
           <ButtonGroup>
-            <ButtonPrimary>ACESSAR</ButtonPrimary>
-            <ButtonSecundary>
+            <ButtonPrimary onClick={() => handleNavigation(linkAccess)}>
+              ACESSAR
+            </ButtonPrimary>
+            <ButtonSecundary onClick={() => handleNavigation(linkGithub)}>
               <Image
                 src={'/contact-icons/github.svg'}
                 height={24}

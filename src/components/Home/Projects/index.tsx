@@ -4,6 +4,7 @@ import Slider, { Settings } from 'react-slick';
 
 import HeaderSection from '@/components/Shared/HeaderSection';
 import SlideArrow from '@/components/Shared/SlideArrow';
+import { projects } from '@/constant/projects';
 
 import Project from './Project';
 import { Container, Content } from './styles';
@@ -56,9 +57,18 @@ export default function Projects() {
           <HeaderSection name="Projetos" centered />
 
           <Slider {...settings}>
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <Project key={item} />
-            ))}
+            {projects.map(
+              ({ description, img, title, linkGithub, linkAccess }, index) => (
+                <Project
+                  description={description}
+                  img={img}
+                  title={title}
+                  key={index}
+                  linkGithub={linkGithub}
+                  linkAccess={linkAccess}
+                />
+              )
+            )}
           </Slider>
         </Content>
       </Container>
