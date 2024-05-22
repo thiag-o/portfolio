@@ -1,6 +1,7 @@
 const darkTheme = {
   colors: {
     primary: '#FE4A3E',
+    primaryDark: '#DA3B30',
 
     grays: {
       w: '#FFFFFF',
@@ -22,6 +23,7 @@ const darkTheme = {
     backgroundTransparent: '#2E2E2EF2',
 
     backgroundCard: '#404040',
+    backgroundCardHover: '#2E2E2E',
 
     backgroundField: '#FFFFFF17',
 

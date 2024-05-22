@@ -57,9 +57,11 @@ export default function Project({
         <DescriptionGroup>
           <DescriptionProject>{description}</DescriptionProject>
           <ButtonGroup>
-            <ButtonPrimary onClick={() => handleNavigation(linkAccess)}>
-              ACESSAR
-            </ButtonPrimary>
+            {linkAccess && (
+              <ButtonPrimary onClick={() => handleNavigation(linkAccess)}>
+                ACESSAR
+              </ButtonPrimary>
+            )}
             <ButtonSecundary onClick={() => handleNavigation(linkGithub)}>
               <Image
                 src={'/contact-icons/github.svg'}

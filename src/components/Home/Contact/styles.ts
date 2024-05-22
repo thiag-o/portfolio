@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { PaperPlane, PaperPlaneRight } from 'phosphor-react';
 import styled, { css } from 'styled-components';
 
 import CommonButton from '@/components/Shared/CommonButton';
@@ -53,14 +55,18 @@ export const Form = styled.form`
 `;
 
 export const SendButton = styled(CommonButton)`
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
   padding: 16px;
-  transition: all 0.2s ease-in-out;
-  font-size: 1.1rem;
+  transition: all 0.2s ease-in;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
   letter-spacing: 1.2px;
 
-  &:hover,
-  &:focus-visible {
-    box-shadow: 0px 0px 8px 4px ${({ theme }) => theme.colors.primary}80;
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.primaryDark};
   }
 
   &:disabled {
@@ -72,6 +78,11 @@ export const SendButton = styled(CommonButton)`
     }
   }
 `;
+
+export const Icon = styled(motion(PaperPlaneRight)).attrs({
+  weight: 'fill',
+  size: 24,
+})``;
 
 export const ContactCards = styled.div`
   display: grid;

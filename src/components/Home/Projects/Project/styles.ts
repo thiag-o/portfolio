@@ -89,17 +89,31 @@ export const ButtonGroup = styled.div`
   gap: 12px;
 `;
 export const ButtonPrimary = styled(CommonButton)`
-  flex: 1;
+  width: 100%;
   padding: 12px;
 
   font-size: 1rem;
   font-weight: ${({ theme }) => theme.fontWeight.semiBold};
   line-height: 1;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.primaryDark};
+  }
 `;
 export const ButtonSecundary = styled(CommonButton)`
-  width: 100px;
+  flex: 1;
+  width: auto;
+  min-width: 100px;
+  width: 100%;
+  height: 40px;
   background-color: ${({ theme }) => theme.colors.backgroundCard};
 
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.backgroundCardHover};
+  }
   img {
     filter: brightness(${({ theme }) => theme.imgBrightness});
   }

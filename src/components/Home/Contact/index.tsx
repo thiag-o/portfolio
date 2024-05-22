@@ -1,4 +1,5 @@
 import { zodResolver } from '@hookform/resolvers/zod';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Element } from 'react-scroll';
@@ -17,6 +18,7 @@ import {
   Container,
   Content,
   Form,
+  Icon,
   SendButton,
 } from './styles';
 
@@ -43,6 +45,10 @@ export default function Contact() {
   });
 
   const [isSending, setIsSending] = useState(false);
+
+  const variants = {
+    hover: { x: 20, scale: 1.1 },
+  };
 
   async function onSubmit(values: IFormValues) {
     setIsSending(true);
@@ -94,8 +100,10 @@ export default function Contact() {
                 name="subject"
                 isTextArea
               />
-              <SendButton disabled={isSending} type="submit">
-                {isSending ? 'ENVIANDO...' : 'ENVIAR'}
+              <SendButton disabled={isSending} whileHover="hover" type="submit">
+                <span>{isSending ? 'ENVIANDO...' : 'ENVIAR'} </span>
+
+                <Icon variants={variants} />
               </SendButton>
             </Form>
 

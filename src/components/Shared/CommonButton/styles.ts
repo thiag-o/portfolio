@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   display: flex;
   align-items: center;
   justify-content: center;

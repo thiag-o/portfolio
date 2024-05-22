@@ -1,8 +1,9 @@
+import { HTMLMotionProps } from 'framer-motion';
 import React, { ButtonHTMLAttributes } from 'react';
 
 import { Button } from './styles';
 
-interface ICommonButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ICommonButtonProps extends HTMLMotionProps<'button'> {
   children: React.ReactNode;
 }
 
