@@ -19,6 +19,7 @@ import {
   Content,
   Form,
   Icon,
+  Loading,
   SendButton,
 } from './styles';
 
@@ -47,7 +48,8 @@ export default function Contact() {
   const [isSending, setIsSending] = useState(false);
 
   const variants = {
-    hover: { x: 20, scale: 1.1 },
+    hover: { x: 5, scale: 1.05 },
+    tap: { x: 0 },
   };
 
   async function onSubmit(values: IFormValues) {
@@ -100,10 +102,23 @@ export default function Contact() {
                 name="subject"
                 isTextArea
               />
-              <SendButton disabled={isSending} whileHover="hover" type="submit">
-                <span>{isSending ? 'ENVIANDO...' : 'ENVIAR'} </span>
-
-                <Icon variants={variants} />
+              <SendButton
+                disabled={isSending}
+                whileHover="hover"
+                whileTap="tap"
+                type="submit"
+              >
+                {isSending ? (
+                  <>
+                    <span>ENVIANDO</span>
+                    <Loading />
+                  </>
+                ) : (
+                  <>
+                    <span>ENVIAR</span>
+                    <Icon variants={variants} />
+                  </>
+                )}
               </SendButton>
             </Form>
 

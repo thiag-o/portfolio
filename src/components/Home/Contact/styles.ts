@@ -1,5 +1,10 @@
 import { motion } from 'framer-motion';
-import { PaperPlane, PaperPlaneRight } from 'phosphor-react';
+import {
+  CircleNotch,
+  PaperPlane,
+  PaperPlaneRight,
+  SpinnerGap,
+} from 'phosphor-react';
 import styled, { css } from 'styled-components';
 
 import CommonButton from '@/components/Shared/CommonButton';
@@ -83,6 +88,18 @@ export const Icon = styled(motion(PaperPlaneRight)).attrs({
   weight: 'fill',
   size: 24,
 })``;
+export const Loading = styled(motion(SpinnerGap)).attrs({
+  weight: 'bold',
+  animate: { rotate: 360 },
+  transition: {
+    ease: 'linear',
+    duration: 1.2,
+    repeat: Infinity,
+  },
+  size: 24,
+})`
+  color: ${({ theme }) => theme.colors.grays['c1']};
+`;
 
 export const ContactCards = styled.div`
   display: grid;
