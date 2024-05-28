@@ -11,7 +11,7 @@ import HeaderSection from '@/components/Shared/HeaderSection';
 import { EHttpStatusCode } from '@/global/enums/EHttpStatusCode';
 
 import ContactCard from './ContactCard';
-import { resolver } from './ContactCard/schema';
+import { resolver } from './schema';
 import {
   ContactCards,
   ContactContainer,
@@ -78,7 +78,7 @@ export default function Contact() {
         <Content className="container">
           <HeaderSection
             name="Contato"
-            subtitle="Entre em contato: preencha o formulário ou conecte-se diretamente pelas minhas redes."
+            subtitle="Preencha o formulário ou conecte-se diretamente pelas minhas redes sociais."
           />
 
           <ContactContainer>
@@ -123,9 +123,21 @@ export default function Contact() {
             </Form>
 
             <ContactCards>
-              <ContactCard name="Linkedin" image="linkedin" href="#" />
-              <ContactCard name="GitHub" image="github" href="#" />
-              <ContactCard name="Email" image="email" href="#" />
+              <ContactCard
+                name="Linkedin"
+                image="linkedin"
+                href="https://www.linkedin.com/in/thiago-borges-mansano-5b67811a2"
+              />
+              <ContactCard
+                name="GitHub"
+                image="github"
+                href="https://github.com/thiag-o"
+              />
+              <ContactCard
+                name="WhatsApp"
+                image="whatsapp"
+                href="https://wa.me/5514996640587"
+              />
             </ContactCards>
           </ContactContainer>
         </Content>

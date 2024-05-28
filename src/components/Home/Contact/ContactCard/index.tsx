@@ -1,18 +1,17 @@
 import Image from 'next/image';
+import { LinkProps } from 'next/link';
 import React from 'react';
 
 import { Container, Text } from './styles';
 
-interface IContactCard {
+interface IContactCard extends LinkProps {
   name: string;
   image: string;
-
-  href: string;
 }
 
-export default function ContactCard({ name, image, href }: IContactCard) {
+export default function ContactCard({ name, image, ...rest }: IContactCard) {
   return (
-    <Container href={href}>
+    <Container {...rest}>
       <Image
         src={`/contact-icons/${image}.svg`}
         alt="linkedin"

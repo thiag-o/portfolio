@@ -107,12 +107,13 @@ export const ButtonSecundary = styled(CommonButton)`
   min-width: 100px;
   width: 100%;
   height: 40px;
+  border: 2px solid transparent;
   background-color: ${({ theme }) => theme.colors.backgroundCard};
 
   transition: all 0.2s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.backgroundCardHover};
+    border-color: ${({ theme }) => theme.colors.grays['c7']};
   }
   img {
     filter: brightness(${({ theme }) => theme.imgBrightness});

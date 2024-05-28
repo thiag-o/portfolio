@@ -7,7 +7,7 @@ export default function Footer() {
     <Container>
       <div className="container">
         <Text>
-          Created by Thiago Borges Mansano © 2024{' '}
+          Criado por Thiago Borges Mansano © 2024{' '}
           <Link href="https://github.com/thiag-o" target="_blank">
             github/thiag-o
           </Link>

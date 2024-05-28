@@ -20,6 +20,8 @@ const baseUrl =
 const github = baseUrl + '/contact-icons/img/github-black.jpg';
 const linkedin = baseUrl + '/contact-icons/img/linkedin-black.jpg';
 const emailLogo = baseUrl + '/contact-icons/img/email-black.jpg';
+const whatsappLogo = baseUrl + '/contact-icons/img/whatsapp-black.jpg';
+
 const logo = baseUrl + '/logo-black.jpg';
 
 interface IContactProps {
@@ -78,13 +80,13 @@ export default function Contact({ name, email, subject }: IContactProps) {
                 </Button>
               </Column>
               <Column>
-                <Button style={button} href="mailto:thiagobmansano@gmail.com">
+                <Button style={button} href="https://wa.me/5514996640587">
                   <Img
                     style={img}
                     height={24}
                     width={24}
-                    src={emailLogo}
-                    alt="email"
+                    src={whatsappLogo}
+                    alt="whatsapp"
                   />
                 </Button>
               </Column>
