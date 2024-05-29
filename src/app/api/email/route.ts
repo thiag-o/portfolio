@@ -14,8 +14,6 @@ export async function POST(req: NextRequest) {
     );
   } catch (error: any) {
     if (error.message) {
-      return NextResponse.json({ message: error.message });
-    } else {
       return NextResponse.json({
         message: 'Falha ao enviar o email, Tente novamente mais tarde.',
       });
