@@ -32,11 +32,6 @@ export default function RootLayout({
         </StyledComponentsRegistry>
         <Toaster richColors closeButton />
       </body>
-      <script
-        type="text/javascript"
-        async
-        src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/d5024a2c-d6f2-48d9-b2f5-aa4b8b658601-loader.js"
-      ></script>
     </html>
   );
 }
